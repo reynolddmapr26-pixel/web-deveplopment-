@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Mana Website Creator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo">Mana<span>Website</span>Creator</a>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <label for="nav-toggle" class="nav-btn" aria-label="Toggle menu">&#9776;</label>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <form class="search" action="#" role="search"><input type="search" placeholder="Search..." aria-label="Search"></form>
+      <div class="social"><a href="#">FB</a><a href="#">IG</a><a href="#">in</a></div>
+      <a href="contact.html" class="btn btn-primary">Hire Me</a>
+    </nav>
+  </div>
+</header>
+```html
+<main>
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="container">
+      <h1>Contact Us</h1>
+      <p>Let’s talk about your next website project.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section">
+    <div class="container contact-grid">
+
+      <!-- Contact Form -->
+      <div>
+        <h2>Send Us a Message</h2>
+
+        <form
+          class="form"
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
+          <!-- Web3Forms Access Key -->
+          <input
+            type="hidden"
+            name="access_key"
+            value="6a9df1ea-d4b2-49eb-9e25-5e4a3e5a98b1"
+          >
+
+          <!-- Email Subject -->
+          <input
+            type="hidden"
+            name="subject"
+            value="New Website Project Inquiry"
+          >
+
+          <!-- Full Name -->
+          <label for="name">Full Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Your full name"
+            autocomplete="name"
+            required
+          >
+
+          <!-- Email -->
+          <label for="email">Email Address</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="you@example.com"
+            autocomplete="email"
+            required
+          >
+
+          <!-- Phone -->
+          <label for="phone">Phone Number</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="+92 300 1234567"
+            autocomplete="tel"
+          >
+
+          <!-- Service -->
+          <label for="service">Service Required</label>
+          <select id="service" name="service" required>
+            <option value="" disabled selected>
+              Select a service
+            </option>
+            <option value="Website Design">Website Design</option>
+            <option value="Front-End Development">
+              Front-End Development
+            </option>
+            <option value="Business Website">Business Website</option>
+            <option value="Portfolio Website">Portfolio Website</option>
+            <option value="E-commerce Website">
+              E-commerce Website
+            </option>
+            <option value="Landing Page">Landing Page</option>
+            <option value="Website Redesign">Website Redesign</option>
+            <option value="Responsive Design">Responsive Design</option>
+          </select>
+
+          <!-- Budget -->
+          <label for="budget">Project Budget</label>
+          <select id="budget" name="budget" required>
+            <option value="" disabled selected>
+              Select your budget
+            </option>
+            <option value="Under $200">Under $200</option>
+            <option value="$200 - $500">$200 – $500</option>
+            <option value="$500 - $1000">$500 – $1000</option>
+            <option value="$1000+">$1000+</option>
+          </select>
+
+          <!-- Project Subject -->
+          <label for="project-subject">Subject</label>
+          <input
+            type="text"
+            id="project-subject"
+            name="project_subject"
+            placeholder="What is your project about?"
+            required
+          >
+
+          <!-- Message -->
+          <label for="message">Message</label>
+          <textarea
+            id="message"
+            name="message"
+            rows="6"
+            placeholder="Tell us about your project..."
+            required
+          ></textarea>
+
+          <!-- Spam Protection -->
+          <input
+            type="checkbox"
+            name="botcheck"
+            style="display: none;"
+            tabindex="-1"
+          >
+
+          <!-- Submit Button -->
+          <button type="submit" class="btn btn-primary">
+            Send Message
+          </button>
+        </form>
+      </div>
+
+      <!-- Contact Information -->
+      <aside>
+        <div class="card pad info">
+          <div class="icon">✉️</div>
+          <h3>Email</h3>
+          <p>info@example.com</p>
+        </div>
+
+        <div class="card pad info">
+          <div class="icon">📞</div>
+          <h3>Phone</h3>
+          <p>+92 300 1234567</p>
+        </div>
+
+        <div class="card pad info">
+          <div class="icon">📍</div>
+          <h3>Location</h3>
+          <p>Your City, Pakistan</p>
+        </div>
+
+        <div class="card pad info">
+          <h3>Follow Us</h3>
+          <div class="social dark">
+            <a href="#" aria-label="Facebook">Facebook</a>
+            <a href="#" aria-label="Instagram">Instagram</a>
+            <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          </div>
+        </div>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- Frequently Asked Questions -->
+  <section class="section bg-light">
+    <div class="container narrow">
+      <h2 class="center">Frequently Asked Questions</h2>
+
+      <details class="faq">
+        <summary>How long does a website take?</summary>
+        <p>
+          Most small websites take 1–3 weeks,
+          depending on the project's size and requirements.
+        </p>
+      </details>
+
+      <details class="faq">
+        <summary>Will my website work on mobile?</summary>
+        <p>
+          Yes. We design responsive websites for mobile phones,
+          tablets, and desktop computers.
+        </p>
+      </details>
+
+      <details class="faq">
+        <summary>Can you redesign my existing website?</summary>
+        <p>
+          Absolutely. We can improve your website's design,
+          layout, and user experience.
+        </p>
+      </details>
+
+      <details class="faq">
+        <summary>How do payments work?</summary>
+        <p>
+          Payment terms will be discussed and agreed upon
+          before the project begins.
+        </p>
+      </details>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <a href="index.html" class="logo">Mana<span>Website</span>Creator</a>
+      <p>Modern, responsive websites for businesses, creators, and startups.</p>
+      <div class="social"><a href="#">FB</a><a href="#">IG</a><a href="#">in</a><a href="#">X</a></div>
+    </div>
+    <div><h4>Quick Links</h4><ul>
+      <li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="products.html">Products</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h4>Services</h4><ul>
+      <li><a href="services.html#design">Website Design</a></li><li><a href="services.html#frontend">Front-End Development</a></li><li><a href="services.html#ecommerce">E-commerce Design</a></li><li><a href="services.html#redesign">Website Redesign</a></li></ul></div>
+    <div><h4>Contact</h4><ul>
+      <li>info@example.com</li><li>+00 000 0000000</li><li>Your City, Country</li></ul></div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; 2026 Mana Website Creator. All rights reserved.</p>
+    <a href="index.html">Back to Home</a>
+  </div>
+</footer>
+
+</body>
+</html>
